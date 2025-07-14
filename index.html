@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiseArab - Learn Arabic & Quran Online with Expert Tutors</title>
+    <meta name="description" content="Quality Arabic and Quran education for children in KG to Grade 8 across Gulf countries. Live online sessions with personalized learning.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #10b981 100%);
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background-color: #ffb606;
+            color: #442e66;
+        }
+        .btn-primary:hover {
+            background-color: #e6a306;
+        }
+        .btn-secondary {
+            background-color: #9b51e0;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #8a42d6;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <span class="text-2xl font-bold text-[#442e66]">Rise<span class="text-[#9b51e0]">Arab</span></span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-[#442e66] font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-[#442e66] transition">About</a>
+                <a href="arabic.html" class="text-gray-600 hover:text-[#442e66] transition">Arabic</a>
+                <a href="quran.html" class="text-gray-600 hover:text-[#442e66] transition">Quran</a>
+                <a href="coding.html" class="text-gray-600 hover:text-[#442e66] transition">Coding</a>
+                <a href="math.html" class="text-gray-600 hover:text-[#442e66] transition">Math</a>
+                <a href="contact.html" class="text-gray-600 hover:text-[#442e66] transition">Contact</a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white pb-4 px-4">
+            <a href="index.html" class="block py-2 text-[#442e66] font-medium">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-[#442e66] transition">About</a>
+            <a href="arabic.html" class="block py-2 text-gray-600 hover:text-[#442e66] transition">Arabic</a>
+            <a href="quran.html" class="block py-2 text-gray-600 hover:text-[#442e66] transition">Quran</a>
+            <a href="coding.html" class="block py-2 text-gray-600 hover:text-[#442e66] transition">Coding</a>
+            <a href="math.html" class="block py-2 text-gray-600 hover:text-[#442e66] transition">Math</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-[#442e66] transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Learn Arabic & Quran Online with Expert Tutors</h1>
+                <p class="text-xl mb-8 opacity-90">Personalized, engaging, and curriculum-aligned learning for children in KG to Grade 8 across Gulf countries.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#demo" class="btn-primary font-semibold px-6 py-3 rounded-lg text-center transition">Book a Free Demo</a>
+                    <a href="contact.html" class="btn-secondary font-semibold px-6 py-3 rounded-lg text-center transition">Contact Us Now</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Online learning" class="rounded-lg shadow-2xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Offerings Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#442e66]">Our Core Offerings</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Quality education tailored for Gulf country students</p>
+                <div class="w-20 h-1 bg-[#442e66] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Offering 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-[#442e66] mb-4">
+                        <i class="fas fa-user-graduate text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">One-to-One Arabic Classes</h3>
+                    <p class="text-gray-600 mb-4">Personalized Arabic tutoring tailored to your child's grade level and curriculum (CBSE, British, American, IB, or local Gulf standards).</p>
+                    <a href="arabic.html" class="text-[#9b51e0] font-medium hover:underline">Learn More →</a>
+                </div>
+                
+                <!-- Offering 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-[#9b51e0] mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Group Arabic Classes</h3>
+                    <p class="text-gray-600 mb-4">Small group sessions (4-6 students) promoting collaborative learning through engaging Arabic activities.</p>
+                    <a href="arabic.html" class="text-[#9b51e0] font-medium hover:underline">Learn More →</a>
+                </div>
+                
+                <!-- Offering 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-[#ffb606] mb-4">
+                        <i class="fas fa-quran text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quran Tajweed Classes</h3>
+                    <p class="text-gray-600 mb-4">Live classes for Quran reading with focus on Tajweed, correct pronunciation, and fluency. Female tutors available.</p>
+                    <a href="quran.html" class="text-[#9b51e0] font-medium hover:underline">Learn More →</a>
+                </div>
+                
+                <!-- Offering 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-[#4f46e5] mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Tech & Coding Classes</h3>
+                    <p class="text-gray-600 mb-4">Beginner-friendly live coding classes for students from Classes 4 to 8 focusing on Scratch programming and logical thinking.</p>
+                    <a href="coding.html" class="text-[#9b51e0] font-medium hover:underline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#442e66]">Why Parents Choose Us</h2>
+                <div class="w-20 h-1 bg-[#442e66] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffb606]">
+                    <h3 class="font-semibold mb-2">Live Interactive Sessions</h3>
+                    <p class="text-gray-600">No pre-recorded videos - real-time learning with expert tutors</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#9b51e0]">
+                    <h3 class="font-semibold mb-2">Curriculum-Aligned</h3>
+                    <p class="text-gray-600">Qualified tutors familiar with Gulf country curriculums</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#4f46e5]">
+                    <h3 class="font-semibold mb-2">Personalized Learning</h3>
+                    <p class="text-gray-600">Customized learning plans for each student</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#10b981]">
+                    <h3 class="font-semibold mb-2">Safe Online Environment</h3>
+                    <p class="text-gray-600">Secure platform with progress tracking</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#ffb606]">
+                    <h3 class="font-semibold mb-2">Female Tutors Available</h3>
+                    <p class="text-gray-600">Option for female instructors upon request</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#9b51e0]">
+                    <h3 class="font-semibold mb-2">Dual Focus</h3>
+                    <p class="text-gray-600">Language + Technology = Complete educational support</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#4f46e5]">
+                    <h3 class="font-semibold mb-2">Progress Reports</h3>
+                    <p class="text-gray-600">Regular updates on your child's learning outcomes</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-[#10b981]">
+                    <h3 class="font-semibold mb-2">Flexible Scheduling</h3>
+                    <p class="text-gray-600">Classes that fit your family's routine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#442e66]">What Parents Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Thousands of parents across the Gulf trust us with their child's education</p>
+                <div class="w-20 h-1 bg-[#442e66] mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Parent from Dubai" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Parent, Dubai</h4>
+                            <div class="flex mt-1 text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"My daughter's Arabic improved tremendously. She now reads and writes confidently. Thank you!"</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Mother from Riyadh" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Mother, Riyadh</h4>
+                            <div class="flex mt-1 text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The Tajweed tutor is so patient and kind. My son enjoys every class."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Parent from Doha" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Parent, Doha</h4>
+                            <div class="flex mt-1 text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The group class helped my child become more confident in Arabic. Great experience!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Booking Section -->
+    <section id="demo" class="py-16 bg-[#442e66] text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Book a Free Demo</h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto">Experience the difference of live, quality education with no obligation</p>
+                    <div class="w-20 h-1 bg-[#ffb606] mx-auto mt-4"></div>
+                </div>
+                
+                <form class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Parent's Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#442e66]">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#442e66]">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#442e66]">
+                        </div>
+                        <div>
+                            <label for="country" class="block text-gray-700 font-medium mb-2">Country</label>
+                            <select id="country" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#442e66]">
+                                <option value="">Select Country</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="QA">Qatar</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="OM">Oman</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Select Service</label>
+                            <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#442e66]">
+                                <option value="">Select Service</option>
+                                <option value="arabic">Arabic One-to-One</option>
+                                <option value="group-arabic">Arabic Group Class</option>
+                                <option value="quran">Quran Tajweed</option>
+                                <option value="coding">Tech & Coding</option>
+                                <option value="math">Math Tutoring</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="grade" class="block text-gray-700 font-medium mb-2">Student Grade Level</label>
+                            <select id="grade" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#442e66]">
+                                <option value="">Select Grade</option>
+                                <option value="KG">KG</option>
+                                <option value="1">Grade 1</option>
+                                <option value="2">Grade 2</option>
+                                <option value="3">Grade 3</option>
+                                <option value="4">Grade 4</option>
+                                <option value="5">Grade 5</option>
+                                <option value="6">Grade 6</option>
+                                <option value="7">Grade 7</option>
+                                <option value="8">Grade 8</option>
+                                <option value="9-12">Grades 9-12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Additional Notes</label>
+                        <textarea id="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#442e66]"></textarea>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <button type="submit" class="btn-primary font-semibold px-8 py-3 rounded-lg transition">Book My Free Demo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#442e66] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">RiseArab Academy</h3>
+                    <p class="text-gray-300">Quality Arabic, Quran, and tech education for students across Gulf countries.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white text-xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white text-xl"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="arabic.html" class="text-gray-300 hover:text-white transition">Arabic Classes</a></li>
+                        <li><a href="quran.html" class="text-gray-300 hover:text-white transition">Quran Classes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Our Programs</h4>
+                    <ul class="space-y-2">
+                        <li><a href="arabic.html" class="text-gray-300 hover:text-white transition">One-to-One Arabic</a></li>
+                        <li><a href="arabic.html" class="text-gray-300 hover:text-white transition">Group Arabic</a></li>
+                        <li><a href="quran.html" class="text-gray-300 hover:text-white transition">Quran Tajweed</a></li>
+                        <li><a href="coding.html" class="text-gray-300 hover:text-white transition">Tech & Coding</a></li>
+                        <li><a href="math.html" class="text-gray-300 hover:text-white transition">Math Tutoring</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-gray-300"></i>
+                            <span class="text-gray-300">info@risearab.edu</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-gray-300"></i>
+                            <span class="text-gray-300">+966 12 345 6789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-gray-300"></i>
+                            <span class="text-gray-300">Serving Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#5a3a85] mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2023 RiseArab Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Form submission
+        const demoForm = document.querySelector('form');
+        if (demoForm) {
+            demoForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your demo request! We will contact you shortly to schedule your session.');
+                demoForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>

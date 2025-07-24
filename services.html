@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - EduArabic</title>
+  <link rel="icon" href="Rise Arab Logo.webp" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Header Section (Black Background) -->
+  <header class="sticky top-0 z-50 bg-black shadow-sm">
+    <div class="container mx-auto px-4 py-3 lg:px-8">
+      <!-- Mobile Header (Logo + Hamburger) -->
+      <div class="flex items-center justify-between lg:hidden">
+        <div class="flex items-center">
+          <a href="#" class="text-xl font-bold text-white">Arabrise</a>
+        </div>
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Header (4-column layout) -->
+      <div class="hidden lg:flex lg:items-center lg:justify-between lg:gap-6">
+        <!-- 1. Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-xl font-bold text-white">Arabrise</a>
+        </div>
+
+        <!-- 2. Search Bar -->
+        <div class="flex-1 max-w-md">
+          <div class="relative">
+            <input type="text" placeholder="Search courses..."
+              class="w-full rounded-lg border-gray-600 bg-gray-800 py-2 pl-4 pr-10 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring-indigo-500" />
+            <button class="absolute right-3 top-2.5 text-gray-400">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Navigation Menu -->
+        <nav class="hidden lg:flex lg:items-center lg:space-x-8">
+          <a href="index.html" class="text-white hover:text-indigo-300">Home</a>
+          <a href="about.html" class="text-white hover:text-indigo-300">About</a>
+          <a href="services.html" class="text-white hover:text-indigo-300">Services</a>
+          <a href="contact.html" class="text-white hover:text-indigo-300">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="mt-4 space-y-2">
+          <a href="index.html" class="block py-2 text-white hover:bg-gray-800">Home</a>
+          <a href="about.html" class="block py-2 text-white hover:bg-gray-800">About</a>
+          <a href="services.html" class="block py-2 text-white hover:bg-gray-800">Services</a>
+          <a href="contact.html" class="block py-2 text-white hover:bg-gray-800">Contact</a>
+          <!-- Mobile Search (Optional) -->
+          <div class="py-2">
+            <input type="text" placeholder="Search..."
+              class="w-full rounded-lg border-gray-600 bg-gray-800 py-2 px-4 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring-indigo-500" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Unified Hero Section -->
+  <section class="relative bg-gradient-to-r from-purple-800 to-blue-700 text-white">
+    <div class="container mx-auto px-4 py-24 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Expert Online Classes for Gulf Students</h1>
+      <p class="text-xl md:text-2xl italic text-purple-200 mb-8 max-w-3xl mx-auto">
+        KG to Grade 12 · 1-on-1 & Group · Aligned with Your School Curriculum
+      </p>
+      
+      <!-- Visual Collage (Mobile/Desktop) -->
+      <div class="hidden md:flex justify-center mb-12">
+        <div class="grid grid-cols-2 gap-4 max-w-2xl">
+          <img src="arabic-student.jpg" alt="Arabic learning" class="rounded-lg h-48 w-full object-cover">
+          <img src="quran-student.jpg" alt="Quran learning" class="rounded-lg h-48 w-full object-cover">
+          <img src="coding-student.jpg" alt="Coding class" class="rounded-lg h-48 w-full object-cover">
+          <img src="math-student.jpg" alt="Math tutoring" class="rounded-lg h-48 w-full object-cover">
+        </div>
+      </div>
+      
+      <!-- Service Navigation Anchors -->
+      <div class="service-nav flex flex-wrap justify-center gap-4 mb-2">
+        <a href="#arabic" class="bg-white bg-opacity-10 hover:bg-opacity-20 px-6 py-2 rounded-full transition">
+          <i class="fas fa-language mr-2"></i> Arabic
+        </a>
+        <a href="#quran" class="bg-white bg-opacity-10 hover:bg-opacity-20 px-6 py-2 rounded-full transition">
+          <i class="fas fa-book-quran mr-2"></i> Quran
+        </a>
+        <a href="#coding" class="bg-white bg-opacity-10 hover:bg-opacity-20 px-6 py-2 rounded-full transition">
+          <i class="fas fa-laptop-code mr-2"></i> Coding
+        </a>
+        <a href="#math" class="bg-white bg-opacity-10 hover:bg-opacity-20 px-6 py-2 rounded-full transition">
+          <i class="fas fa-calculator mr-2"></i> Math
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arabic Tutoring Section -->
+  <section id="arabic" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <!-- Image Column -->
+        <div class="lg:w-1/2 relative">
+          <img src="arabic-tutoring.jpg" alt="Child learning Arabic" class="rounded-xl shadow-lg w-full">
+          <div class="absolute -bottom-4 -right-4 bg-purple-600 text-white px-4 py-2 rounded-lg shadow-md">
+            <i class="fas fa-female mr-2"></i> Female tutors available
+          </div>
+        </div>
+        
+        <!-- Content Column -->
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Personalized Arabic Classes for School Success</h2>
+          
+          <!-- Formats -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-3 flex items-center">
+              <i class="fas fa-users text-purple-600 mr-2"></i> Learning Formats
+            </h3>
+            <div class="space-y-3">
+              <div class="flex items-start bg-purple-50 p-4 rounded-lg">
+                <i class="fas fa-user text-purple-600 mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-medium">1-on-1 Sessions</h4>
+                  <p class="text-gray-600 text-sm">Tailored to CBSE/British/American/Gulf MOE curricula</p>
+                </div>
+              </div>
+              <div class="flex items-start bg-purple-50 p-4 rounded-lg">
+                <i class="fas fa-user-friends text-purple-600 mt-1 mr-3"></i>
+                <div>
+                  <h4 class="font-medium">Small Groups (4-6 students)</h4>
+                  <p class="text-gray-600 text-sm">Collaborative tasks and peer learning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Skills Covered -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-3 flex items-center">
+              <i class="fas fa-star text-purple-600 mr-2"></i> Skills Covered
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Speaking fluency</span>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">School exam prep</span>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Creative writing</span>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Reading comprehension</span>
+            </div>
+          </div>
+          
+          <!-- CTA -->
+          <a href="/arabic-tutors" class="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg transition">
+            Match My Child with an Arabic Tutor <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quran & Tajweed Section -->
+  <section id="quran" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Build a Spiritual Connection with Correct Recitation</h2>
+      
+      <!-- Feature Boxes -->
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Tajweed -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <i class="fas fa-microphone-alt text-blue-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-3">Tajweed Mastery</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>Step-by-step pronunciation</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>Rhythmic flow techniques</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>Rules of recitation</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Zaidi Focus -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <i class="fas fa-mosque text-blue-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-3">Zaidi Quran Focus</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>Specialized tutors</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>Age-appropriate pacing</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>Cultural sensitivity</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Flexible Options -->
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <i class="fas fa-calendar-alt text-blue-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-center mb-3">Flexible Options</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>1-on-1 private sessions</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>Sisters-only classes</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+              <span>Memorization support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Testimonial -->
+      <div class="max-w-2xl mx-auto bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600 mb-12">
+        <p class="italic text-gray-700 mb-2">"After 3 months, my son won his school's Quran competition!"</p>
+        <p class="font-medium">— Parent, Kuwait</p>
+      </div>
+      
+      <!-- CTA -->
+      <div class="text-center">
+        <a href="/quran-signup" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition">
+          Start Quran Learning Today <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Math Tutoring Section -->
+  <section id="math" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Conquer School Math with Gulf-Aligned Support</h2>
+      
+      <!-- Grade Breakdown (Mobile Expandable) -->
+      <div class="mb-12">
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Elementary -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button onclick="toggleExpand('elementary')" class="w-full flex justify-between items-center p-4 bg-green-50">
+              <h3 class="text-lg font-semibold">Elementary (1-5)</h3>
+              <i class="fas fa-chevron-down md:hidden"></i>
+            </button>
+            <div id="elementary" class="expandable-content md:max-h-full">
+              <div class="p-4">
+                <ul class="space-y-2 text-gray-600">
+                  <li>Number sense development</li>
+                  <li>Word problem strategies</li>
+                  <li>Basic geometry concepts</li>
+                  <li>Math fact fluency</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Middle -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button onclick="toggleExpand('middle')" class="w-full flex justify-between items-center p-4 bg-green-50">
+              <h3 class="text-lg font-semibold">Middle (6-8)</h3>
+              <i class="fas fa-chevron-down md:hidden"></i>
+            </button>
+            <div id="middle" class="expandable-content md:max-h-full">
+              <div class="p-4">
+                <ul class="space-y-2 text-gray-600">
+                  <li>Algebra preparation</li>
+                  <li>Fraction mastery</li>
+                  <li>Data handling skills</li>
+                  <li>Problem-solving techniques</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- High School -->
+          <div class="border border-gray-200 rounded-lg overflow-hidden">
+            <button onclick="toggleExpand('highschool')" class="w-full flex justify-between items-center p-4 bg-green-50">
+              <h3 class="text-lg font-semibold">High School (9-12)</h3>
+              <i class="fas fa-chevron-down md:hidden"></i>
+            </button>
+            <div id="highschool" class="expandable-content md:max-h-full">
+              <div class="p-4">
+                <ul class="space-y-2 text-gray-600">
+                  <li>Calculus foundations</li>
+                  <li>Statistics applications</li>
+                  <li>Exam cramming sessions</li>
+                  <li>University prep</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Curriculum Badges -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8">
+        <span class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+          <img src="cbse-logo.png" alt="CBSE" class="h-6 mr-2"> CBSE
+        </span>
+        <span class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+          <img src="british-logo.png" alt="British" class="h-6 mr-2"> British
+        </span>
+        <span class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+          <img src="ib-logo.png" alt="IB" class="h-6 mr-2"> IB
+        </span>
+        <span class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+          <img src="saudi-logo.png" alt="Saudi MOE" class="h-6 mr-2"> Saudi MOE
+        </span>
+      </div>
+      
+      <!-- Success Metric -->
+      <div class="text-center mb-12">
+        <p class="text-2xl font-bold text-green-600 mb-2">92%</p>
+        <p class="text-gray-600">of students improve grades within 2 months</p>
+      </div>
+      
+      <!-- CTA -->
+      <div class="text-center">
+        <a href="/math-help" class="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition">
+          Get Math Help Now <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unified CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-purple-600 to-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Unsure Which Service Fits Your Child?</h2>
+      
+      <!-- Steps -->
+      <div class="grid md:grid-cols-3 gap-8 mb-12 max-w-5xl mx-auto">
+        <!-- Step 1 -->
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+          <div class="bg-white bg-opacity-20 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <span class="text-xl font-bold">1</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Free Assessment</h3>
+          <p class="text-purple-100">15-min call with an advisor</p>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+          <div class="bg-white bg-opacity-20 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <span class="text-xl font-bold">2</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Personalized Plan</h3>
+          <p class="text-purple-100">Tutor + schedule recommendations</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+          <div class="bg-white bg-opacity-20 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <span class="text-xl font-bold">3</span>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Risk-Free Trial</h3>
+          <p class="text-purple-100">First class free</p>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/assessment" class="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-3 px-8 rounded-lg transition">
+          Book Assessment
+        </a>
+        <a href="https://wa.me/1234567890" class="bg-white bg-opacity-10 hover:bg-opacity-20 border-2 border-white text-white font-bold py-3 px-8 rounded-lg transition flex items-center justify-center">
+          <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white" style="background-color: black;">
+    <div class="container mx-auto px-4 py-16">
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Column 1: Logo & Description -->
+        <div>
+          <a href="#" class="mb-4 inline-block text-2xl font-bold text-white">Arabrise</a>
+          <p class="mb-6 text-gray-400">
+            Empowering learners worldwide with high-quality courses.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-twitter text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-youtube text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Contact Us</h3>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-500"></i>
+              <span>123 Education Street, Learning City, 101010</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone-alt mt-1 mr-3 text-purple-500"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-purple-500"></i>
+              <span>info@arabrise.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-clock mt-1 mr-3 text-purple-500"></i>
+              <span>Mon-Fri: 9AM - 6PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Newsletter</h3>
+          <p class="mb-4 text-gray-400">
+            Subscribe to get updates on new courses and offers.
+          </p>
+          <form class="flex flex-col space-y-4">
+            <input type="email" placeholder="Your Email"
+              class="rounded-lg bg-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <button type="submit"
+              class="rounded-lg bg-purple-600 px-6 py-3 font-medium text-white transition hover:bg-purple-700">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="my-12 border-t border-gray-800"></div>
+
+      <!-- Bottom Footer -->
+      <div class="flex flex-col items-center justify-between md:flex-row">
+        <p class="text-gray-500">
+          © 2025 Arabrise. All rights reserved.
+        </p>
+        <div class="mt-4 flex space-x-6 md:mt-0">
+          <a href="#" class="text-gray-500 hover:text-white">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-white">Terms of Service</a>
+          <a href="#" class="text-gray-500 hover:text-white">Cookies Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

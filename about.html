@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Empowering Gulf Students with Arabic, Quran & Future-Ready Skills </title>
+  <link rel="icon" href="Rise Arab Logo.webp" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Header Section (Black Background) -->
+  <header class="sticky top-0 z-50 bg-black shadow-sm">
+    <div class="container mx-auto px-4 py-3 lg:px-8">
+      <!-- Mobile Header (Logo + Hamburger) -->
+      <div class="flex items-center justify-between lg:hidden">
+        <div class="flex items-center">
+          <a href="#" class="text-xl font-bold text-white">Arabrise</a>
+        </div>
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Header (4-column layout) -->
+      <div class="hidden lg:flex lg:items-center lg:justify-between lg:gap-6">
+        <!-- 1. Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-xl font-bold text-white">Arabrise</a>
+        </div>
+
+        <!-- 2. Search Bar -->
+        <div class="flex-1 max-w-md">
+          <div class="relative">
+            <input type="text" placeholder="Search courses..."
+              class="w-full rounded-lg border-gray-600 bg-gray-800 py-2 pl-4 pr-10 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring-indigo-500" />
+            <button class="absolute right-3 top-2.5 text-gray-400">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Navigation Menu -->
+        <nav class="hidden lg:flex lg:items-center lg:space-x-8">
+          <a href="index.html" class="text-white hover:text-indigo-300">Home</a>
+          <a href="about.html" class="text-white hover:text-indigo-300">About</a>
+          <a href="services.html" class="text-white hover:text-indigo-300">Services</a>
+          <a href="contact.html" class="text-white hover:text-indigo-300">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="mt-4 space-y-2">
+          <a href="index.html" class="block py-2 text-white hover:bg-gray-800">Home</a>
+          <a href="about.html" class="block py-2 text-white hover:bg-gray-800">About</a>
+          <a href="services.html" class="block py-2 text-white hover:bg-gray-800">Services</a>
+          <a href="contact.html" class="block py-2 text-white hover:bg-gray-800">Contact</a>
+          <!-- Mobile Search (Optional) -->
+          <div class="py-2">
+            <input type="text" placeholder="Search..."
+              class="w-full rounded-lg border-gray-600 bg-gray-800 py-2 px-4 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring-indigo-500" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section class="relative bg-[url('students-learning.jpg')] bg-cover bg-center bg-gray-900">
+  <!-- Overlay for better text readability -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  
+  <div class="container mx-auto px-4 py-24 lg:py-32 relative z-10">
+    <div class="max-w-4xl mx-auto text-center text-white">
+      <!-- Headline -->
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        Empowering Gulf Students with Arabic, Quran & Future-Ready Skills
+      </h1>
+      
+      <!-- Subheadline -->
+      <p class="text-xl md:text-2xl italic text-purple-200 mb-10">
+        Where tradition meets innovation—expert-led online classes for KG to Grade 12.
+      </p>
+      
+      <!-- CTA Button -->
+      <a href="#our-team" 
+         class="inline-flex items-center px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-lg transition-all group">
+        Meet Our Tutors
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <!-- Left Column (Image) -->
+      <div class="lg:w-1/2">
+        <div class="relative rounded-xl overflow-hidden shadow-lg">
+          <img 
+            src="founder-classroom.jpg" 
+            alt="Founder teaching students" 
+            class="w-full h-auto object-cover"
+            onerror="this.src='https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'"
+          >
+          <!-- Decorative element -->
+          <div class="absolute -bottom-2 -right-2 bg-purple-600 w-24 h-24 rounded-tl-xl opacity-90"></div>
+        </div>
+      </div>
+
+      <!-- Right Column (Text) -->
+      <div class="lg:w-1/2">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+        
+        <blockquote class="text-lg italic text-gray-700 border-l-4 border-purple-600 pl-6 mb-8">
+          "Founded in [Year], we started with a simple goal: to help expat and local families in the Gulf access high-quality Arabic and Quran education online. Today, we've expanded to include coding and math, bridging cultural roots with 21st-century skills."
+        </blockquote>
+        
+        <!-- Milestones Grid -->
+        <div class="grid grid-cols-2 gap-6">
+          <!-- Milestone 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="text-4xl font-bold text-purple-600 mb-2">20+</div>
+            <p class="text-gray-700 font-medium">Qualified Tutors</p>
+          </div>
+          
+          <!-- Milestone 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="text-4xl font-bold text-blue-600 mb-2">5,000+</div>
+            <p class="text-gray-700 font-medium">Classes Taught</p>
+          </div>
+          
+          <!-- Milestone 3 -->
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="text-4xl font-bold text-green-600 mb-2">6</div>
+            <p class="text-gray-700 font-medium">Gulf Countries Served</p>
+          </div>
+          
+          <!-- Empty slot for balance -->
+          <div class="bg-gray-50 p-6 rounded-lg border-2 border-dashed border-gray-200 flex items-center justify-center">
+            <p class="text-gray-500">Your Child Could Be Next</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Values Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Why Parents Trust Us</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Value 1 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center">
+        <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Interactive Learning</h3>
+        <p class="text-gray-600">Live sessions where students ask questions and engage—no boring recordings!</p>
+      </div>
+      
+      <!-- Value 2 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center">
+        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h.01" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Cultural Sensitivity</h3>
+        <p class="text-gray-600">Tutors understand Gulf school curricula and Islamic values.</p>
+      </div>
+      
+      <!-- Value 3 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center">
+        <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Safety First</h3>
+        <p class="text-gray-600">Secure platform with progress tracking and female tutors available.</p>
+      </div>
+      
+      <!-- Value 4 -->
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center">
+        <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Future Ready</h3>
+        <p class="text-gray-600">Arabic + tech skills to prepare kids for tomorrow's challenges.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Mission & Values -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Mission & Values</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Value 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+          <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-star text-purple-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Educational Excellence</h3>
+          <p class="text-gray-600">We maintain the highest standards in curriculum development and teaching methodologies.</p>
+        </div>
+        
+        <!-- Value 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-users text-blue-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Cultural Sensitivity</h3>
+          <p class="text-gray-600">Our programs respect and incorporate Gulf cultural values and Islamic principles.</p>
+        </div>
+        
+        <!-- Value 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+          <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-laptop-code text-green-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Future Readiness</h3>
+          <p class="text-gray-600">We prepare students with both traditional knowledge and 21st century digital skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Meet Our Team</h2>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Team Member 1 -->
+        <div class="text-center">
+          <img src="https://randomuser.me/api/portraits/women/43.jpg" 
+               alt="Team member" 
+               class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Aisha Al-Farsi</h3>
+          <p class="text-purple-600 mb-2">Head of Arabic Studies</p>
+          <p class="text-gray-600 text-sm">15+ years teaching experience, PhD in Arabic Linguistics</p>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="text-center">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+               alt="Team member" 
+               class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Yusuf Khan</h3>
+          <p class="text-blue-600 mb-2">Quran Education Director</p>
+          <p class="text-gray-600 text-sm">Hafiz with ijazah in multiple qira'at</p>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="text-center">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" 
+               alt="Team member" 
+               class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Fatima Ahmed</h3>
+          <p class="text-green-600 mb-2">Coding Instructor</p>
+          <p class="text-gray-600 text-sm">Former software engineer specializing in edtech</p>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="text-center">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" 
+               alt="Team member" 
+               class="w-32 h-32 rounded-full object-cover mx-auto mb-4">
+          <h3 class="text-xl font-semibold">Omar Hassan</h3>
+          <p class="text-yellow-600 mb-2">Student Success Manager</p>
+          <p class="text-gray-600 text-sm">Dedicated to personalized learning journeys</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Final CTA Section -->
+<section class="py-20 bg-gradient-to-r from-purple-700 to-blue-600 text-white">
+  <div class="container mx-auto px-4 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">
+        Give Your Child the Gift of Confidence—Today and Tomorrow.
+      </h2>
+      
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <!-- Primary Button -->
+        <a href="/demo" class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold rounded-lg bg-yellow-400 text-black hover:bg-yellow-300 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          Book a Free Demo
+        </a>
+        
+        <!-- Secondary Button -->
+        <a href="/careers" class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-lg bg-white bg-opacity-10 text-white hover:bg-opacity-20 transition-all border-2 border-white border-opacity-30">
+          Become a Tutor
+        </a>
+      </div>
+      
+      <!-- Trust Indicators -->
+      <div class="flex flex-wrap justify-center gap-6 mt-12 text-sm">
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>
+          <span>4.9/5 Parent Rating</span>
+        </div>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Money-Back Guarantee</span>
+        </div>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          <span>Secure Platform</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white" style="background-color: black;">
+    <div class="container mx-auto px-4 py-16">
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Column 1: Logo & Description -->
+        <div>
+          <a href="#" class="mb-4 inline-block text-2xl font-bold text-white">Arabrise</a>
+          <p class="mb-6 text-gray-400">
+            Empowering learners worldwide with high-quality courses.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-twitter text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-youtube text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Contact Us</h3>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-500"></i>
+              <span>123 Education Street, Learning City, 101010</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone-alt mt-1 mr-3 text-purple-500"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-purple-500"></i>
+              <span>info@arabrise.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-clock mt-1 mr-3 text-purple-500"></i>
+              <span>Mon-Fri: 9AM - 6PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Newsletter</h3>
+          <p class="mb-4 text-gray-400">
+            Subscribe to get updates on new courses and offers.
+          </p>
+          <form class="flex flex-col space-y-4">
+            <input type="email" placeholder="Your Email"
+              class="rounded-lg bg-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <button type="submit"
+              class="rounded-lg bg-purple-600 px-6 py-3 font-medium text-white transition hover:bg-purple-700">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="my-12 border-t border-gray-800"></div>
+
+      <!-- Bottom Footer -->
+      <div class="flex flex-col items-center justify-between md:flex-row">
+        <p class="text-gray-500">
+          © 2025 Arabrise. All rights reserved.
+        </p>
+        <div class="mt-4 flex space-x-6 md:mt-0">
+          <a href="#" class="text-gray-500 hover:text-white">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-white">Terms of Service</a>
+          <a href="#" class="text-gray-500 hover:text-white">Cookies Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

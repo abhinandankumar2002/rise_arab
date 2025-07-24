@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - EduArabic</title>
+  <link rel="icon" href="Rise Arab Logo.webp" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-black shadow-sm">
+    <div class="container mx-auto px-4 py-3 lg:px-8">
+      <!-- Mobile Header (Logo + Hamburger) -->
+      <div class="flex items-center justify-between lg:hidden">
+        <div class="flex items-center">
+          <a href="#" class="text-xl font-bold text-white">Arabrise</a>
+        </div>
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Header (4-column layout) -->
+      <div class="hidden lg:flex lg:items-center lg:justify-between lg:gap-6">
+        <!-- 1. Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-xl font-bold text-white">Arabrise</a>
+        </div>
+
+        <!-- 2. Search Bar -->
+        <div class="flex-1 max-w-md">
+          <div class="relative">
+            <input type="text" placeholder="Search courses..."
+              class="w-full rounded-lg border-gray-600 bg-gray-800 py-2 pl-4 pr-10 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring-indigo-500" />
+            <button class="absolute right-3 top-2.5 text-gray-400">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Navigation Menu -->
+        <nav class="hidden lg:flex lg:items-center lg:space-x-8">
+          <a href="index.html" class="text-white hover:text-indigo-300">Home</a>
+          <a href="about.html" class="text-white hover:text-indigo-300">About</a>
+          <a href="services.html" class="text-white hover:text-indigo-300">Services</a>
+          <a href="contact.html" class="text-white hover:text-indigo-300">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="mt-4 space-y-2">
+          <a href="index.html" class="block py-2 text-white hover:bg-gray-800">Home</a>
+          <a href="about.html" class="block py-2 text-white hover:bg-gray-800">About</a>
+          <a href="services.html" class="block py-2 text-white hover:bg-gray-800">Services</a>
+          <a href="contact.html" class="block py-2 text-white hover:bg-gray-800">Contact</a>
+          <!-- Mobile Search (Optional) -->
+          <div class="py-2">
+            <input type="text" placeholder="Search..."
+              class="w-full rounded-lg border-gray-600 bg-gray-800 py-2 px-4 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring-indigo-500" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-purple-700 to-blue-600 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">We're Here to Help</h1>
+      <p class="text-xl max-w-2xl mx-auto">Contact our education specialists for course inquiries, tutor matching, or support</p>
+    </div>
+  </section>
+
+  <!-- Contact Methods -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Email -->
+        <div class="text-center p-8 bg-gray-50 rounded-xl hover:shadow-md transition">
+          <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-envelope text-purple-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Email Us</h3>
+          <p class="text-gray-600 mb-4">Typically replies within 24 hours</p>
+          <a href="mailto:info@eduarabic.com" class="text-purple-600 font-medium">info@eduarabic.com</a>
+        </div>
+        
+        <!-- WhatsApp -->
+        <div class="text-center p-8 bg-gray-50 rounded-xl hover:shadow-md transition">
+          <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fab fa-whatsapp text-green-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">WhatsApp</h3>
+          <p class="text-gray-600 mb-4">Fast responses during business hours</p>
+          <a href="https://wa.me/966123456789" class="text-green-600 font-medium">+966 12 345 6789</a>
+        </div>
+        
+        <!-- Phone -->
+        <div class="text-center p-8 bg-gray-50 rounded-xl hover:shadow-md transition">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-phone-alt text-blue-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Call Us</h3>
+          <p class="text-gray-600 mb-4">Sun-Thu: 9AM-6PM (GST)</p>
+          <a href="tel:+966123456789" class="text-blue-600 font-medium">+966 12 345 6789</a>
+        </div>
+      </div>
+
+      <!-- Contact Form + Map -->
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Contact Form -->
+        <div class="lg:w-1/2">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h2>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">Your Name*</label>
+                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2">Email*</label>
+                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-gray-700 mb-2">Subject*</label>
+              <select id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                <option value="">Select an option</option>
+                <option>Course Inquiry</option>
+                <option>Tutor Matching</option>
+                <option>Technical Support</option>
+                <option>Billing Question</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-gray-700 mb-2">Message*</label>
+              <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition">
+              Send Message
+            </button>
+          </form>
+        </div>
+        
+        <!-- Map & Address -->
+        <div class="lg:w-1/2">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Our Location</h2>
+          <!-- Map Embed -->
+          <div class="h-80 bg-gray-200 rounded-xl overflow-hidden mb-6">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1ddummy!2d46.6752957!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzQ4LjgiTiA0NsKwNDAnMzEuMCJF!5e0!3m2!1sen!2ssa!4v1234567890123!5m2!1sen!2ssa" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-xl">
+            <h3 class="text-xl font-semibold mb-4">EduArabic Headquarters</h3>
+            <address class="not-italic text-gray-600 space-y-3">
+              <p class="flex items-start">
+                <i class="fas fa-map-marker-alt text-purple-600 mt-1 mr-3"></i>
+                <span>123 Education Street, Riyadh 12345, Saudi Arabia</span>
+              </p>
+              <p class="flex items-center">
+                <i class="fas fa-clock text-purple-600 mr-3"></i>
+                <span>Sunday-Thursday: 9:00 AM - 6:00 PM</span>
+              </p>
+              <p class="flex items-center">
+                <i class="fas fa-calendar-alt text-purple-600 mr-3"></i>
+                <span>Closed on Fridays and public holidays</span>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
+      
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <button class="w-full flex justify-between items-center" onclick="toggleFAQ('faq1')">
+            <h3 class="text-lg font-semibold text-left">How do I book a free trial class?</h3>
+            <i class="fas fa-chevron-down text-purple-600"></i>
+          </button>
+          <div id="faq1" class="mt-4 text-gray-600 hidden">
+            <p>You can book a trial directly through our website's demo scheduler, or WhatsApp us to arrange a suitable time. Trials last 30 minutes and let you experience our teaching style before committing.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <button class="w-full flex justify-between items-center" onclick="toggleFAQ('faq2')">
+            <h3 class="text-lg font-semibold text-left">What qualifications do your tutors have?</h3>
+            <i class="fas fa-chevron-down text-purple-600"></i>
+          </button>
+          <div id="faq2" class="mt-4 text-gray-600 hidden">
+            <p>All our tutors hold at least a bachelor's degree in their teaching subject, along with minimum 3 years teaching experience. Arabic/Quran tutors are native speakers with ijazah certification where applicable.</p>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <button class="w-full flex justify-between items-center" onclick="toggleFAQ('faq3')">
+            <h3 class="text-lg font-semibold text-left">Can I request a female tutor?</h3>
+            <i class="fas fa-chevron-down text-purple-600"></i>
+          </button>
+          <div id="faq3" class="mt-4 text-gray-600 hidden">
+            <p>Absolutely. We have many qualified female tutors available across all subjects. Just mention this preference when booking, or contact our support team to arrange.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href="/faq" class="text-purple-600 font-medium inline-flex items-center">
+          View Full FAQ <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Still Have Questions?</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">Our education consultants are ready to help you choose the right program for your child</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="tel:+966123456789" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition flex items-center justify-center">
+          <i class="fas fa-phone-alt mr-2"></i> Call Now
+        </a>
+        <a href="https://wa.me/966123456789" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg transition flex items-center justify-center">
+          <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white" style="background-color: black;">
+    <div class="container mx-auto px-4 py-16">
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Column 1: Logo & Description -->
+        <div>
+          <a href="#" class="mb-4 inline-block text-2xl font-bold text-white">Arabrise</a>
+          <p class="mb-6 text-gray-400">
+            Empowering learners worldwide with high-quality courses.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-twitter text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-linkedin-in text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-youtube text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Contact Us</h3>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-500"></i>
+              <span>123 Education Street, Learning City, 101010</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone-alt mt-1 mr-3 text-purple-500"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-purple-500"></i>
+              <span>info@arabrise.com</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-clock mt-1 mr-3 text-purple-500"></i>
+              <span>Mon-Fri: 9AM - 6PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div>
+          <h3 class="mb-6 text-lg font-semibold uppercase tracking-wider">Newsletter</h3>
+          <p class="mb-4 text-gray-400">
+            Subscribe to get updates on new courses and offers.
+          </p>
+          <form class="flex flex-col space-y-4">
+            <input type="email" placeholder="Your Email"
+              class="rounded-lg bg-gray-800 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <button type="submit"
+              class="rounded-lg bg-purple-600 px-6 py-3 font-medium text-white transition hover:bg-purple-700">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="my-12 border-t border-gray-800"></div>
+
+      <!-- Bottom Footer -->
+      <div class="flex flex-col items-center justify-between md:flex-row">
+        <p class="text-gray-500">
+          © 2025 Arabrise. All rights reserved.
+        </p>
+        <div class="mt-4 flex space-x-6 md:mt-0">
+          <a href="#" class="text-gray-500 hover:text-white">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-white">Terms of Service</a>
+          <a href="#" class="text-gray-500 hover:text-white">Cookies Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle FAQ items
+    function toggleFAQ(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('hidden');
+      
+      // Rotate chevron
+      const button = element.previousElementSibling;
+      const icon = button.querySelector('i');
+      icon.classList.toggle('transform');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+
+</body>
+</html>
